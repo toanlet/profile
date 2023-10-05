@@ -1,0 +1,15 @@
+export const PATH = {
+  HOME: '/',
+  LOGIN: 'login',
+  MAIN: 'main',
+  CONTACT: 'contact',
+  DETAIL: 'detail',
+  PRIVACY: 'privacy',
+  MY_PAGE: 'my-page',
+  ADMIN: '/admin',
+  USER_MANAGEMENT: 'user-management',
+  USER_DETAIL: 'user-detail/:id',
+  POST_MANAGEMENT: 'post-management',
+  LATEST_POST: 'latest-post',
+  OVERVIEW: 'overview',
+};
