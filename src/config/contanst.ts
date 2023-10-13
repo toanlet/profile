@@ -12,4 +12,16 @@ export const PATH = {
   POST_MANAGEMENT: 'post-management',
   LATEST_POST: 'latest-post',
   OVERVIEW: 'overview',
+  DASHBOARD: 'dashboard',
+  ACCOUNT_SETTING: 'account-setting',
+  ACCOUNT: 'account',
+  SECURITY: 'security',
+  NOTIFICATION: 'notification',
+};
+
+export const BREAKPOINTS = {
+  HORIZONTAL_TABLET: 1280,
+  VERTICAL_TABLET: 1024,
+  HORIZONTAL_MOBILE: 768,
+  VERTICAL_MOBILE: 575,
 };

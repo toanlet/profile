@@ -12,15 +12,19 @@
     "@types/node": "^16.7.13",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
-    "antd": "^5.9.3",
+    "antd": "^5.9.4",
     "axios": "^1.5.0",
+    "i18next": "^23.5.1",
     "lodash": "^4.17.21",
     "moment": "^2.29.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-i18next": "^13.2.2",
+    "react-infinite-scroller": "^1.2.6",
     "react-redux": "^8.1.3",
     "react-router-dom": "^6.16.0",
     "react-scripts": "5.0.1",
+    "sass-loader": "^13.3.2",
     "typescript": "^4.4.2",
     "web-vitals": "^2.1.0"
   },
@@ -49,6 +53,6 @@
     ]
   },
   "devDependencies": {
-    "sass": "^1.68.0"
+    "sass": "^1.69.0"
   }
 }

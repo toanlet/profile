@@ -1,0 +1,17 @@
+@import 'src/styles/variables.scss';
+@import 'src/styles/mixins.scss';
+.admin-layout {
+  display: flex;
+  justify-content: space-between;
+  background-color: $background;
+  min-height: 100vh;
+  .left {
+    flex: 1;
+    background-color: $white;
+  }
+  .right {
+    flex: 4;
+    padding: 0 20px;
+  
+  }
+}

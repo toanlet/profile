@@ -1,0 +1,50 @@
+
+@import 'src/styles/variables.scss';
+@import 'src/styles/mixins.scss';
+.navbar-admin {
+  .logo {
+    height: 60px;
+    line-height: 60px;
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .item-list {
+    padding: 15px 20px;
+    margin: 0 10px;
+    border-radius: 10px;
+    position: relative;
+    &:hover {
+      cursor: pointer;
+    }
+ 
+
+  }
+  .active-list {
+    background-color: $background1;
+      &::after {
+    content: "";
+    width: 5px;
+    height: 46px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: $purple;
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: -9px;
+   }
+  }
+
+ 
+  
+
+  .link {
+    color: $black;
+  }
+  .active {
+    color: $purple;
+
+  }
+ 
+}

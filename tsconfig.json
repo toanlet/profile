@@ -17,7 +17,15 @@
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
-      "react": ["node_modules/@types/react"]
+      "styles": ["./src/styles/*"],
+      "fonts": ["./src/fonts/*"]
+      // "i18n": ["./src/i18n/*"],
+      // "component": ["./src/component/"],
+      // "utils": ["./src/utils/*"],
+      // "pages": ["./src/pages/*"],
+      // "store": ["./src/store/*"],
+      // "api": ["./src/api/*"],
+      // "reducers": ["./src/reducers/*"]
     }
   },
   "include": ["src"]
