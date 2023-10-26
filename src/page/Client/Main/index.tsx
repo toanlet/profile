@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { ReactElement, useEffect, useState } from 'react';
 import './style.scss';
 interface PhotoProps {
   albumId: number;
@@ -25,18 +25,37 @@ const Home = () => {
   useEffect(() => {
     getListPhotos();
   }, []);
+
+  const [counter, setCounter] = useState(0);
+  const handleCount = () => {
+    setCounter(counter + 5);
+    setCounter((n) => n + 1);
+
+    console.log('counter', counter);
+  };
+
+  const [search, setSearch] = useState('');
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearch(e.target.value);
+  };
+
   return (
     <div>
       <h1>Home</h1>
+      {counter}
 
-      {items.map((photo) => {
+      <input value={search} onChange={handleChange} />
+      <button onClick={handleCount}>+3</button>
+
+      {/* {items.map((photo) => {
         return (
           <div>
             {photo.title}
             <img src={photo.thumbnailUrl} alt="dd" />
           </div>
         );
-      })}
+      })} */}
     </div>
   );
 };

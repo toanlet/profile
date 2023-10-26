@@ -1,3 +1,11 @@
+import { Row, Col } from 'antd';
+
 export const Login = () => {
-  return <div>Login page</div>;
+  return (
+    <div>
+      <Row>
+        <Col span={8}></Col>
+      </Row>
+    </div>
+  );
 };
