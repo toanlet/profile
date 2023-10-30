@@ -50,11 +50,7 @@ const Home = () => {
 
   const inputRef = useRef<any>(null);
 
-  // const getInput = useCallback(() => {
-  //   inputRef.current = search;
-  //   console.log('search', search);
-  //   console.log('inputRef.current', inputRef.current);
-  // }, [inputRef, search]);
+ 
 
   return (
     <div>
