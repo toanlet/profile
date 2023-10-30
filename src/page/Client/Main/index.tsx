@@ -1,5 +1,13 @@
-import React, { ReactElement, useEffect, useState } from 'react';
+import React, {
+  ReactElement,
+  forwardRef,
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+} from 'react';
 import './style.scss';
+import exp from 'constants';
 interface PhotoProps {
   albumId: number;
   id: number;
@@ -40,6 +48,14 @@ const Home = () => {
     setSearch(e.target.value);
   };
 
+  const inputRef = useRef<any>(null);
+
+  // const getInput = useCallback(() => {
+  //   inputRef.current = search;
+  //   console.log('search', search);
+  //   console.log('inputRef.current', inputRef.current);
+  // }, [inputRef, search]);
+
   return (
     <div>
       <h1>Home</h1>
@@ -48,16 +64,19 @@ const Home = () => {
       <input value={search} onChange={handleChange} />
       <button onClick={handleCount}>+3</button>
 
-      {/* {items.map((photo) => {
-        return (
-          <div>
-            {photo.title}
-            <img src={photo.thumbnailUrl} alt="dd" />
-          </div>
-        );
-      })} */}
+   
     </div>
   );
 };
 
 export default Home;
+
+const Child = (props: any) => {
+  const { onChange, value } = props;
+  console.log('ref parent:', value);
+  return (
+    <div>
+      <button onClick={onChange}>get change</button>
+    </div>
+  );
+};
