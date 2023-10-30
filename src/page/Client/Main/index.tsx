@@ -71,12 +71,4 @@ const Home = () => {
 
 export default Home;
 
-const Child = (props: any) => {
-  const { onChange, value } = props;
-  console.log('ref parent:', value);
-  return (
-    <div>
-      <button onClick={onChange}>get change</button>
-    </div>
-  );
-};
+
