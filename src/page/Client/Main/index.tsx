@@ -50,8 +50,6 @@ const Home = () => {
 
   const inputRef = useRef<any>(null);
 
- 
-
   return (
     <div>
       <h1>Home</h1>
@@ -59,12 +57,9 @@ const Home = () => {
 
       <input value={search} onChange={handleChange} />
       <button onClick={handleCount}>+3</button>
-
-   
+      <p>rebase</p>
     </div>
   );
 };
 
 export default Home;
-
-
