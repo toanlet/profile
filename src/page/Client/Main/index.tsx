@@ -21,6 +21,7 @@ const Home = () => {
     <div>
       <p>Develop change</p>
       <p>bug fix 2</p>
+      <p>bug fix 3</p>
     </div>
   );
 };
