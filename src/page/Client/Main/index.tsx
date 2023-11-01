@@ -48,7 +48,7 @@ const Home = () => {
     setSearch(e.target.value);
   };
 
-  const inputRef = useRef<any>(null);
+
 
   return (
     <div>
@@ -57,7 +57,7 @@ const Home = () => {
 
       <input value={search} onChange={handleChange} />
       <button onClick={handleCount}>+3</button>
-      <p>rebase</p>
+
     </div>
   );
 };
