@@ -1,3 +1,62 @@
 .home {
-  background-color: red;
+   
+  .top {
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+    .logo {
+      margin: 20px;
+    background: green;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    p {
+      line-height: 50px;
+    }
+    }
+    .tag {
+      width: 60px;
+    background: green;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    position: relative;
+    margin: 0px 10px 20px;
+     &::after {
+      content: '';
+      width: 0;
+      height: 0;
+      position: absolute;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      border-bottom: 15px solid red;
+      position: absolute;
+      bottom: 0;
+     }
+
+p {
+   writing-mode: vertical-rl;
 }
+     
+}
+    }
+   
+   .num {
+      
+  text-combine-upright: all;
+}
+
+.item {
+  p {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    /* font-family: sans; */
+    color: yellow;
+    font-size: 72px;
+  }
+  .box-shadow {
+        filter: drop-shadow(-3px 6px 3px black);
+  }
+}
+  
+}
+
