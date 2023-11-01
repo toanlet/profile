@@ -29,7 +29,7 @@ const Home = () => {
       </div>
 
       <p>T1</p>
-      <p>T2</p>
+      
     </div>
   );
 };
