@@ -48,7 +48,7 @@ const Home = () => {
     setSearch(e.target.value);
   };
 
-
+  const inputRef = useRef<any>(null);
 
   return (
     <div>
