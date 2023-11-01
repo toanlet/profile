@@ -20,7 +20,7 @@ const Home = () => {
   return (
     <div>
       <p>Develop change</p>
-     
+      <p>bug fix 2</p>
     </div>
   );
 };
